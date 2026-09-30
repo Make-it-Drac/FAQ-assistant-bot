@@ -94,7 +94,7 @@ https://github.com/Make-it-Drac/FAQ-assistant-bot.git
 
 2. Open the project folder
 
-cd Healthcare-Awareness-Campaign
+cd FAQ-assistant-bot
 
 3. Run the Python program
 
