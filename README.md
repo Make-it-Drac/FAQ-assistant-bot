@@ -90,7 +90,7 @@ python --version
 
 1. Clone the repository
 
-https://github.com/abhraneel26boe10024-design/Abhraneel-Ghosh-VITYarthi-Project
+https://github.com/Make-it-Drac/FAQ-assistant-bot.git
 
 2. Open the project folder
 
