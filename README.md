@@ -1,116 +1,159 @@
-# Vityarthi VIT Bhopal FAQ Bot
+# Rule-based FAQ chatbot
 
-A simple Python-based FAQ chatbot designed for **Vityarthi, VIT Bhopal** students. The bot uses keyword matching to answer common questions related to fees, admissions, library timings, hostel, transport, course registration, examinations, and attendance.
+A simple FAQ chatbot implemented in Python, which makes answers to inquirers based on rule-based systems and keywords. The bot uses primitive Python features. It is not intelligent, it has no neural networks or any other complex ML models.
 
-## Features
+## How it works
 
-- Simple command-line interface (CLI)
-- Keyword-based FAQ matching
-- Covers common VIT Bhopal student queries
-- No external Python libraries required
-- Easy to modify and add new FAQs
-- Exit command to safely stop the chatbot
+The bot is rule-based. The algorithm is simple and is represented by a few steps:
 
-## Topics Covered
+1. Accepts the input from the user.
 
-The current FAQ database includes:
+2. Converts the input string to the lowercase for case-insensitive comparison.
 
-- Tuition and academic fees
-- Admission, VITEEE, category and eligibility
-- Library timings and book issue
-- Hostel accommodation and hostel timings
-- Attendance requirements
-- Bus and transport services
-- FFCS course registration
-- CAT, FAT, marks, grading and CGPA
+3. Looks for the keywords in the input string.
 
-## How It Works
+4. If any keyword is matched, returns the corresponding answer.
 
-The chatbot stores FAQ rules as keyword-response pairs.
+5. If no keywords were matched, returns the default message.
 
-When a student enters a question:
+6. The user can type exit to quit the bot.
 
-1. The input is converted to lowercase.
-2. The program checks the question against the stored keywords.
-3. If a keyword is found, the corresponding answer is displayed.
-4. If no keyword matches, the bot displays a fallback response.
-5. Typing `exit` closes the program.
+An example of the interaction with the bot:
 
-### Example
+---------------------------------------------------------------------------
 
-```text
 Welcome to the FAQ Bot!
 
-You: What are the fees?
-Bot: Tuition and academic fees must be paid online through the VTOP portal (vtop.vitbhopal.ac.in) before the announced due date to avoid late fines.
+---------------------------------------------------------------------------
 
-You: What is the hostel in timing?
-Bot: The Hostel in timings is 9:30 PM
+You can ask about:
+
+fees, admission, library, hostel, transport, registration,
+
+examinations, attendance, timings or support.
+
+Type 'exit' to stop the program.
+
+---------------------------------------------------------------------------
+
+You: What are the fees?
+
+Bot: Please check the portal or contact the administration
+
+for current fee and payment information.
+
+You: What are the library timings?
+
+Bot: Please check your institutions website or contact
+
+the library for current timings and book-related information.
 
 You: exit
-Thank you for visiting
+
+Thank you for using the FAQ Bot!
+
 ```
 
-## Requirements
+## Technologies
 
-- Python 3.x
-- Any code editor or IDE such as VS Code, PyCharm, or IDLE
+- Python 3
 
-No third-party packages are required.
+No other packages are used. The bot is written in pure Python.
+
+## Project's Structure
+
+```text
+
+Rule-Based-FAQ-Chatbot/
+
+│
+
+├── faq_bot.py
+
+├── README.md
+
+├── statement.md
+
+└──.gitignore
+
+```
 
 ## How to Run
 
-1. Install Python 3.x.
-2. Save the chatbot code as:
-
-```text
-faq_bot.py
-```
-
-3. Open a terminal in the project folder.
-4. Run:
+Make sure that Python3 is installed on your machine
 
 ```bash
-python faq_bot.py
+
+python --version
+
 ```
 
-## Project Structure
+1. Clone the repository
 
-```text
-vityarthi-faq-bot/
-│
-├── faq_bot.py
-├── README.md
-├── statement.md
-└── .gitignore
-```
+https://github.com/abhraneel26boe10024-design/Abhraneel-Ghosh-VITYarthi-Project
+
+2. Open the project folder
+
+cd Healthcare-Awareness-Campaign
+
+3. Run the Python program
+
+Run main.py
 
 ## Limitations
 
-This project uses basic keyword matching rather than Natural Language Processing or an AI model. Therefore:
+The bot is rule-based, hence it has some shortcomings. For instance:
 
-- It may not understand differently worded questions.
-- It returns the first matching keyword rule.
-- It does not maintain conversation history.
-- FAQ information must be manually updated when university policies change.
+- It can't understand the context of the question.
+
+- It doesn't have any ML models to understand the questions; it matches only the exact words.
+
+- It doesn't remember the previous dialogues.
+
+- It doesn't allow users to ask multiple questions in one message.
+
+- The FAQ's database needs to be updated manually.
+
+- The program's source code and the data are not separated.
 
 ## Future Improvements
 
-Possible improvements include:
+The future improvements can be represented by the following ideas:
 
-- Better natural-language matching
-- Fuzzy matching for spelling mistakes
-- More comprehensive VIT Bhopal FAQs
-- GUI or web interface
-- Database-backed FAQ storage
-- Conversation history
-- Admin interface for updating FAQs
-- Integration with an official university information source
+- Implement keyword matching.
 
-## Disclaimer
+- Add an option to match similar words (fuzzy matching).
 
-This is a student-developed FAQ chatbot for educational/project purposes. Information provided by the bot should be verified against official VIT Bhopal/VTOP announcements before making academic, financial, hostel, or administrative decisions.
+- Develop a GUI for the application.
 
-## Author
+- Deploy an application as a web service.
 
-Developed as a **Vityarthi / VIT Bhopal student project** using Python.
+- Store the data in databases.
+
+- Add more categories of questions and answers.
+
+- Separate the code and the data.
+
+- Add an administrator panel to manage the data.
+
+## Learning Outcomes
+
+The project covers several topics related to Python programming language such as:
+
+- Built-in data structures (lists, tuples).
+
+- Built-in functions.
+
+- Loops: for, while.
+
+- Conditional statements: if.
+
+- Working with strings.
+
+- User input.
+
+- The basic structure of the Python programs.
+
+- Using rules to build a decision-making algorithm.
+
+- Git and GitHub.
