@@ -1,112 +1,61 @@
 # Project Statement
 
-## Project Title
+## Project
 
-**Vityarthi VIT Bhopal FAQ Bot**
+Rule-Based FAQ Chatbot
 
-## Introduction
+the questions asked on a daily basis, especially in schools, organizations, web applications, businesses and help desks require answers. However, it may not be practical to manually search for information or call an operator for answers to frequently asked questions.
 
-Students often need quick access to information about university procedures such as fees, admission, attendance, hostel rules, transport, course registration, and examinations. Searching through different notices, portals, and university resources for simple questions can be time-consuming.
+The Rule-Based FAQ Chatbot is a Python program that provides pre‑written answers to common questions. The chatbot detects keywords to identify the topic of a user’s question and displays the answers.
 
-The **Vityarthi VIT Bhopal FAQ Bot** is a simple Python-based chatbot developed to provide quick answers to frequently asked questions related to VIT Bhopal.
+This project is designed to demonstrate the construction of a simple rule‑based chatbot, implemented without the use of artificial intelligence or machine learning. This project shows how one can design a rule-based chatbot using Python concepts.
 
 ## Problem Statement
 
-Students may have difficulty finding answers to common administrative and academic questions. A simple FAQ chatbot can provide frequently requested information through an easy command-line interface.
+Individuals may ask questions including those on fees, admission, library, housing, transport, registration, exams, attendance, schedules and support services amongst others.
 
-The project aims to create a lightweight chatbot that identifies keywords in a student's question and returns the corresponding predefined answer.
+The problem to be solved by this project is to design a command‑line chatbot that identifies common keywords in a user’s question and provides pre‑written answers to common questions.
 
 ## Objectives
 
-The main objectives of this project are:
+- To develop a FAQ chatbot using Python
 
-1. To develop a simple FAQ chatbot using Python.
-2. To provide quick responses to common VIT Bhopal student queries.
-3. To implement keyword-based question matching.
-4. To create a simple and user-friendly command-line interface.
-5. To make the FAQ database easy to update and maintain.
-6. To demonstrate basic Python concepts such as lists, loops, functions, conditions, and string processing.
+- To implement feature that matches questions with keywords
 
-## Scope of the Project
+- To provide pre‑written answers to common questions
 
-The chatbot currently handles questions related to:
+- To ensure the FAQ chatbot is easily customizable
 
-- Fees and tuition payments
-- Admission and VITEEE
-- Categories and eligibility
-- Library timings and books
-- Hostel accommodation and timings
-- Attendance requirements
-- Bus and transport services
-- FFCS course registration
-- CAT, FAT, marks, grading, and CGPA
-
-The project is intended as an educational prototype and can be expanded into a larger student-support system.
+- To develop a re-usable chatbot that can be deployed in various organisations or applications
 
 ## Methodology
 
-The chatbot follows a rule-based approach.
-
-### Step 1: Store FAQ Rules
-
-Each FAQ contains a list of keywords and its corresponding response.
-
-```python
-(["fee", "fees", "tuition", "payment"], "Tuition and academic fees...")
-```
-
-### Step 2: Accept User Input
-
-The chatbot asks the user to enter a question.
-
-### Step 3: Clean the Input
-
-The input is converted to lowercase so that matching is not affected by capitalization.
-
-```python
-def clean(input):
-    return input.lower()
-```
-
-### Step 4: Match Keywords
-
-The chatbot checks each FAQ rule and searches for matching keywords in the user's question.
-
-### Step 5: Generate Response
-
-If a keyword is found, the associated response is displayed.
-
-If no keyword matches, the chatbot returns a fallback message asking the user to try again or contact the help desk.
+The chatbot is designed using a rule‑based approach
 
 ## Technologies Used
 
-- **Programming Language:** Python
-- **Interface:** Command Line Interface (CLI)
-- **Data Storage:** Python list of tuples
-- **Libraries:** No external libraries required
+- Python 3
+
+- Command Line Interface (CLI)
+
+- Tuples List
 
 ## Expected Outcome
 
-The expected outcome is a functional command-line FAQ chatbot capable of answering common VIT Bhopal student questions using predefined rules.
+The expected outcome of this project is to develop a working FAQ chatbot that:
 
-The project also demonstrates how simple rule-based systems can be used to build basic conversational applications.
+- Takes questions from the command line interface
 
-## Future Scope
+- Detects predefined keywords
 
-The project can be improved by adding:
+- Categorizes questions based on the detected keywords
 
-- Natural Language Processing (NLP)
-- Fuzzy keyword matching
-- A graphical user interface
-- A web-based interface
-- A database for storing FAQs
-- More university-specific FAQs
-- Multilingual support
-- Conversation history
-- Automatic FAQ updates from authorized university sources
+- Displays the pre‑written answers for questions whose keywords were matched
 
-## Conclusion
+- Displays informative message for questions with no matched keywords
 
-The Vityarthi VIT Bhopal FAQ Bot is a simple and practical Python project that demonstrates the implementation of a rule-based chatbot. It provides quick access to predefined student information while keeping the implementation easy to understand and modify.
+- Accepts further questions until the user enters `exit` keyword
 
-The project can serve as a foundation for developing a more advanced student-support chatbot in the future.
+##
+
+The Rule-Based FAQ Chatbot is a Python project that provides predetermined answers to frequently-asked questions based on the detection of keywords. The project does not use any intelligence, machine learning, API or libraries. Instead, it utilizes programming concepts to develop a simple chatbot that can be customized and deployed as a frequently asked questions or support system in organisations. This project can also be used as a starting point in the development of more complex chatbot applications.
